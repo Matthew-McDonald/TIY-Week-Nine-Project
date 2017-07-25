@@ -4,27 +4,33 @@ class PlayListItem extends Component {
   render() {
     let cards = this.props.songs.map(song => {
       return (
-        <ul className = 'card' key={song.id}>
-          <li>
-            User Name: {song.userName}
-          </li>
-          <li>
-            Artist/Band: {song.songArtist}
-          </li>
-          <li>
-            Song Title: {song.songTitle}
-          </li>
-          <li>
-            Notes about Song: {song.songNotes}
-          </li>
-        </ul>
-      )
-    })
+        <div className="row">
+          <div className="col-sm-5">
+            <div className="card">
+              <div className="card-block" key={song.id}>
+                <p className="card-text">
+                  User Name: {song.userName}
+                </p>
+                <p className="card-text">
+                  Artist/Band: {song.songArtist}
+                </p>
+                <p className="card-text">
+                  Song Title: {song.songTitle}
+                </p>
+                <p className="card-text">
+                  Notes about Song: {song.songNotes}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    });
     return (
       <div>
         {cards}
       </div>
-    )
+    );
   }
 }
 
