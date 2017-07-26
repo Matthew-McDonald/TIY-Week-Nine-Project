@@ -66,10 +66,11 @@ class PlayListForm extends Component {
   };
   render() {
     return (
-      <div className="">
+      <div className="col-lg">
         <form onSubmit={this.addToList}>
           <label>
             <input
+              className="textArea"
               onChange={this.handleUserNameChange}
               userName="userName"
               type="text"
@@ -77,8 +78,10 @@ class PlayListForm extends Component {
               placeholder="Username"
             />
           </label>
+          <br />
           <label>
             <input
+              className="textArea"
               onChange={this.handleArtistChange}
               songArtist="songArtist"
               type="text"
@@ -86,8 +89,10 @@ class PlayListForm extends Component {
               placeholder="Artist/Band"
             />
           </label>
+          <br />
           <label>
             <input
+              className="textArea"
               onChange={this.handleSongTitleChange}
               songTitle="songTitle"
               type="text"
@@ -95,8 +100,10 @@ class PlayListForm extends Component {
               placeholder="Song Title"
             />
           </label>
+          <br />
           <label>
             <input
+              className="songNoteTextArea"
               onChange={this.handleSongNotesChange}
               songNotes="songNotes"
               type="text"
@@ -104,7 +111,11 @@ class PlayListForm extends Component {
               placeholder="Song Notes"
             />
           </label>
-          <input type="submit" value="Submit" />
+
+          <br />
+          <div className="submitButton">
+            <input type="submit" value="Submit" />
+          </div>
         </form>
       </div>
     );

@@ -5,7 +5,7 @@ class PlayListItem extends Component {
     let cards = this.props.songs.map(song => {
       return (
         <div className="row">
-          <div className="col-sm-5">
+          <div className="col-sm playListItem">
             <div className="card">
               <div className="card-block" key={song.id}>
                 <p className="card-text">

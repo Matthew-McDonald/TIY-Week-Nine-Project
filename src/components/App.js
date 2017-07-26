@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import logo from '../logo.svg';
-import '../styles/App.css';
+import React, { Component } from "react";
+import logo from "../logo.svg";
+import "../styles/App.css";
 
-import NavBar from './NavBar.js';
-import PlayListForm from './PlayListForm.js';
-import PlayList from './PlayList.js';
+import NavBar from "./NavBar.js";
+import PlayListForm from "./PlayListForm.js";
+import PlayList from "./PlayList.js";
 
 class App extends Component {
   render() {
@@ -13,11 +13,13 @@ class App extends Component {
         <div className="App-header">
           <NavBar />
         </div>
-        <div>
-          <PlayListForm />
-        </div>
-        <div>
-          <PlayList />
+        <div className="row">
+          <div className="col-lg playListForm">
+            <PlayListForm />
+          </div>
+          <div className="col-lg">
+            <PlayList />
+          </div>
         </div>
       </div>
     );
