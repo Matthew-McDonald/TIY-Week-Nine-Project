@@ -5,7 +5,7 @@ class NavBar extends Component {
     return (
       <div className="row navBar">
         <div className="col-sm logo">
-          <img className="App-logo" src="./logo.svg" />
+          <img className="App-logo" src="./styles/favicon.ico" />
         </div>
         <div className="col-sm navTitle">
           <h1>Play What?!</h1>

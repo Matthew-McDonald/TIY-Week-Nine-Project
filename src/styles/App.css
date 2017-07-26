@@ -39,14 +39,19 @@
 .songNoteTextArea {
   height: 80px;
   width: 40vw;
+  margin-top: 5px;
 }
 .textArea {
   width: 40vw;
   height: 3vw;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .btn {
   margin-bottom: 10px;
+}
+.btn:hover {
+  background-color:#007FDB;
 }
 .submitButton {
   text-align: left;
@@ -54,6 +59,12 @@
 .playListForm {
   margin-top: 50px;
   padding-right: 0;
+  text-align: left;
+  color: white;
+}
+.formTitle {
+  text-align: left;
+  color: white;
 }
 .playlist {
   margin-top: 30px;

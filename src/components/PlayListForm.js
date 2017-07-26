@@ -67,30 +67,36 @@ class PlayListForm extends Component {
   render() {
     return (
       <div className="col-lg">
+        <div className="formTitle">
+        <h2>Share your favorite song!</h2>
+        </div>
         <form onSubmit={this.addToList}>
           <label>
+            User Name:
             <input
               className="textArea"
               onChange={this.handleUserNameChange}
               userName="userName"
               type="text"
               value={this.state.userName}
-              placeholder="Username"
+              placeholder="Name or User Name"
             />
           </label>
           <br />
           <label>
+            Artist/Band:
             <input
               className="textArea"
               onChange={this.handleArtistChange}
               songArtist="songArtist"
               type="text"
               value={this.state.songArtist}
-              placeholder="Artist/Band"
+              placeholder="Artist or Band Name"
             />
           </label>
           <br />
           <label>
+            Song Title:
             <input
               className="textArea"
               onChange={this.handleSongTitleChange}
@@ -102,14 +108,14 @@ class PlayListForm extends Component {
           </label>
           <br />
           <label>
+            Notes about Song:
             <input
               className="songNoteTextArea"
               onChange={this.handleSongNotesChange}
               songNotes="songNotes"
               type="text"
               value={this.state.songNotes}
-              placeholder="Song Notes"
-            />
+              />
           </label>
 
           <br />
