@@ -61,6 +61,7 @@
   padding-right: 0;
   text-align: left;
   color: white;
+  font-size: 14pt;
 }
 .formTitle {
   text-align: left;
@@ -73,4 +74,5 @@
 .playListItem {
   margin: 5px;
   opacity: .7;
+  font-size: 14pt;
 }
